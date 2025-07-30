@@ -1,12 +1,15 @@
 {
   "name": "tenzies-game",
   "type": "module",
+  "homepage": "https://russellcolestock.github.io/react-tenzies",
   "description": "https://scrimba.com/the-frontend-developer-career-path-c0j/~057p",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "nanoid": "^5.1.5",
@@ -16,6 +19,7 @@
     "vite": "latest"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "*"
+    "@vitejs/plugin-react": "*",
+    "gh-pages": "^6.3.0"
   }
 }
